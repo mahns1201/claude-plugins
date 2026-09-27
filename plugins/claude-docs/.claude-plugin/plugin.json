@@ -1,0 +1,17 @@
+{
+  "name": "claude-docs",
+  "version": "0.1.0",
+  "description": "Audit, initialize, or migrate a project's Claude Code documents into a thin-CLAUDE.md standard structure",
+  "author": {
+    "name": "mahns"
+  },
+  "homepage": "https://github.com/mahns1201/claude-plugins",
+  "repository": "https://github.com/mahns1201/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "boilerplate",
+    "scaffold",
+    "setup"
+  ]
+}

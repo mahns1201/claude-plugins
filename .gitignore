@@ -1,0 +1,14 @@
+# Editors
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Claude Code personal files
+/CLAUDE.local.md
+/.claude/settings.local.json
+
+# Templates
+!plugins/**/common/**/CLAUDE.local.md
+!plugins/**/common/**/.claude/settings.local.json

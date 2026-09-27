@@ -1,0 +1,14 @@
+{
+  "name": "mahns",
+  "description": "Claude Code project boilerplate: scaffolding skill and reusable configuration templates",
+  "owner": {
+    "name": "mahns"
+  },
+  "plugins": [
+    {
+      "name": "claude-docs",
+      "source": "./plugins/claude-docs",
+      "description": "Audit, initialize, or migrate a project's Claude Code documents into a thin-CLAUDE.md standard structure (CLAUDE.md, .claude/rules/, module CLAUDE.md, settings)"
+    }
+  ]
+}
