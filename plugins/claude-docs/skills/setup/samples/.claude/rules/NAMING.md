@@ -9,9 +9,7 @@ paths:
 
 # Naming rules
 
-`paths` matches every file, so this rule is loaded as soon as any file is read. Keep it short.
-
-Record only rules observed in the code. Do not invent rules that were not observed. Every example in a row must be a name that exists in the codebase.
+`paths` matches every file, so this rule is loaded as soon as any file is read.
 
 | Target | Rule | Example |
 | --- | --- | --- |

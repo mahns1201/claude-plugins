@@ -99,11 +99,11 @@ Read the skeletons in `${CLAUDE_PLUGIN_ROOT}/skills/setup/samples/`, fill them f
 | `CLAUDE.md` | `samples/CLAUDE.md` | Project overview, commands, rules reference guide. Three sections only, 50 lines or fewer |
 | `.claude/rules/ARCHITECTURE.md` | `samples/.claude/rules/ARCHITECTURE.md` | Module table, dependency diagram, layer table. Set `paths` to the real source root |
 | `<module root>/CLAUDE.md` | `samples/src/CLAUDE.md` | One per module. For a module without enough evidence, do not create it and leave the ARCHITECTURE.md table cell empty |
-| `.claude/rules/NAMING.md` | `samples/.claude/rules/NAMING.md` | Rules observed in real code with real examples. Do not add rules that were not observed |
+| `.claude/rules/NAMING.md` | `samples/.claude/rules/NAMING.md` | Rules observed in real code. Do not add rules that were not observed. Every example must be a name that exists in the codebase. `paths` is `"**/*"`, so keep it short |
 | `.claude/rules/TEST.md` | `samples/.claude/rules/TEST.md` | Framework, location, structure. Set `paths` to the real test file pattern |
-| `.claude/rules/REVIEW.md` | `samples/.claude/rules/REVIEW.md` | Keep the checklist table as is. Fill only the project-specific checks |
+| `.claude/rules/REVIEW.md` | `samples/.claude/rules/REVIEW.md` | Keep the checklist table as is. Fill only the project-specific checks. `paths` is `"**/*"`, so keep it short |
 
-Generated documents follow `.claude/rules/MARKDOWN.md` and `.claude/rules/CLAUDE_CODE.md` as copied from `common/`. Replace every placeholder `<...>` with a real value or leave it as `<TODO: ...>`. Never leave an empty placeholder in place.
+Generated documents follow `.claude/rules/MARKDOWN.md` and `.claude/rules/CLAUDE_CODE.md` as copied from `common/`. Replace every placeholder `<...>` with a real value or leave it as `<TODO: ...>`. Never leave an empty placeholder in place. Prose in the skeletons is written for the reader of the finished document, such as cross-references to other rule files. Keep it as is; only the placeholders are filled.
 
 Proposing additional rules. When the analysis reveals an area that fits none of the `samples/` files, propose a new rule. Examples: database schema and migrations, API contracts and documentation, authentication and authorization, internationalization, deployment and infrastructure configuration, generated code. Show proposals as a table and create only the ones the user picks.
 

@@ -9,7 +9,7 @@ paths:
 
 # Review rules
 
-`paths` matches every file, so this rule is loaded as soon as any file is read. Keep it short.
+`paths` matches every file, so this rule is loaded as soon as any file is read.
 
 Run this before reporting work as done and whenever a review is requested. Each item points to the rule file that owns the criterion. The criteria themselves are not repeated here.
 
